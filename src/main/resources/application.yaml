@@ -1,6 +1,13 @@
 spring:
   application:
-    name: config-demo
-
+    name: configdemo
+  config:
+    import: optional:configserver:http://localhost:8888
   profiles:
     active: dev
+
+
+#build:
+#  id: ${id}
+#  version: ${VERSION}
+#  name: ${NAME}
